@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  height: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+  background-color: #00a8ff;
+  font-size: 16px;
+  color: #353b48;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  height: auto;
+  padding: 40px;
+}
+
+.container {
+  padding: 34px 100px;
+  width: 100%;
+  max-width: 650px;
+  background-color: #ffffff;
+}
+
+.container:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.ui.input {
+  width: 100%;
+}
+
+.todo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(34,36,38,.15);
+  margin-bottom: 14px;
+}
+
+.container .button-edit {
+  position: absolute;
+  right: -46px;
+  padding: 0.68em !important;
+}
+
+.todo .checkbox {
+  margin-right: 10px;
+}
+
+.todo--active .text {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.todo .button {
+  margin-left: auto;
+}
+
+.checkbox {
+  position: relative;
+  display: flex;
+}
+
+.checkbox {
+  cursor: pointer;
+}
+
+.checkbox input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.buttons.tabs {
+  width: 100%;
+}
+
+.search-input {
+  margin-bottom: 34px;
+}
+
+.checkbox-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 3px;
+  border: 1px solid #353b48;
+}
+
+.checkbox-icon:after {
+  content: '\e800';
+  font-family: Checkbox;
+  color: #ffffff;
+}
+
+.checkbox input:checked + .checkbox-icon {
+  background-color: #00a8ff;
+  border-color: #00a8ff;
+}
+
+.input-edit {
+  margin-right: 20px;
+}
+
+.hidden{
+  display: none;
+}

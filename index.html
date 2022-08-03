@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./semantic.min.css" />
+  <link rel="stylesheet" href="./index.css" />
+  <title>Todo-list</title>
+</head>
+<body>
+  <div class="container">
+    <h1>TODO LIST</h1>
+    <div class="ui divider"></div>
+    <div>
+      <div class="ui action input">
+        <input class="add-todo-input" type="text" placeholder="Введите название задача...">
+        <button class="ui button add-todo-button">Добавить</button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="ui buttons tabs">
+      <button class="ui button blue">Все</button>
+      <button class="ui button">Активные</button>
+      <button class="ui button">Завершенные</button>
+    </div>
+    <div class="ui divider"></div>
+    <div class="ui icon input search-input">
+      <input type="text" placeholder="Поиск">
+      <i class="inverted circular search icon"></i>
+    </div>
+    <div class="list"></div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
